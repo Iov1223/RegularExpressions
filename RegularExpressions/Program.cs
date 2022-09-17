@@ -67,7 +67,7 @@ namespace RegularExpressions
             PrintPoem(poem);
             Console.WriteLine("\nВведите букву кирилицы слова с которой нужно найти:");
             string Letter2 = Console.ReadLine();
-            string RE = @"\w*" + Letter2 + "\\b";
+            string RE = @"\w*" + Letter2 + "\\w*";
             string Letter = "Все слова содержащие букву \"" + Letter2 + "\":";
             PrintWord(poem, RE, Letter, Letter2);
             Console.WriteLine("\nВведите букву кирилицы на которую оканчиваются слова:");
